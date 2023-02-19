@@ -1,6 +1,9 @@
 #!/bin/bash
 cd src/interactive_interface
-npm install
-export NODE_OPTIONS=--openssl-legacy-provider
+npm install .
+
 ./node_modules/.bin/webpack --mode=production
 
+cd ../..
+
+pip install -e .
