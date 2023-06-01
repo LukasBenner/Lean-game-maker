@@ -35,3 +35,9 @@ pip3 install -e .
 or un the script `buil.sh`.
 
 After that, the executable `make-lean-game` is installed in the virtual environment.
+
+## Lean Server
+To make an interactive webpage, the javascript Lean server is used. In this repository, javascript servers for Lean 3.50.3 are provided. If you're working with a different version, you need to add the required files to `src/interactive_interface/lean_server` or respectively `src/interactive_interface/lean_server/leanprover-community`.You would need three files, named `lean_js_js.js`, `lean_js_wasm.js` and `lean_js_wasm.wasm`.
+You may find these files for most versions of lean in the following links:
+- [https://github.com/leanprover-community/lean/releases](https://github.com/leanprover-community/lean/releases)
+- [https://github.com/leanprover-community/lean-nightly/releases](https://github.com/leanprover-community/lean-nightly/releases)
