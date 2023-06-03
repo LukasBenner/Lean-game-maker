@@ -5,4 +5,5 @@
 **/*.olean
 **/.vscode
 src/interactive_interface/lean_server/*
+build
 venv

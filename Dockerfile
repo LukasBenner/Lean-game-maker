@@ -7,7 +7,7 @@ RUN python3 -m pipx ensurepath
 RUN pipx install mathlibtools
 RUN . ~/.profile
 ENV PATH="$PATH:/root/.elan/toolchains/stable/bin"
-RUN curl -sL https://deb.nodesource.com/setup_16.x | sh -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | sh -
 RUN apt -y install nodejs
 WORKDIR /lean-game-maker
 COPY . .
