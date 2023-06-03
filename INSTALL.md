@@ -16,7 +16,7 @@ or run the script `setup.sh`.
 
 ## Install Lean-game-maker
 
-Install [`nodejs`](https://nodejs.org/en/download/) v16.20.0.
+Install [`nodejs`](https://nodejs.org/en/download/) v18
 Newer versions of nodejs may break the installation because of deprecated packages.
 
 Install [`gettext`](https://www.gnu.org/software/gettext/), if it's not already installed. 
@@ -26,7 +26,7 @@ Clone the repository. Inside the virtual environment and in the root folder of t
 ```bash
 cd src/interactive_interface
 npm install .
-./node_modules/.bin/webpack --mode=production
+NODE_OPTIONS=--openssl-legacy-provider ./node_modules/.bin/webpack --mode=production
 cd ../..
 
 pip3 install -e .
